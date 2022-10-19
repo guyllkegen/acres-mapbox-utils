@@ -36,5 +36,9 @@
     "prettier": "^2.7.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@turf/boolean-contains": "^6.5.0",
+    "geojson": "^0.5.0"
   }
 }
