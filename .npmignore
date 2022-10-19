@@ -1,3 +1,9 @@
 node_modules
 /coverage
 /src
+/.github
+jest.config.js
+/__mock__
+/tsconfig.json
+
+!/dist
