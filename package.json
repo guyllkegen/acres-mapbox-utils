@@ -21,8 +21,13 @@
   },
   "homepage": "https://github.com/guyllkegen/acres-mapbox-utils#readme",
   "devDependencies": {
+    "@turf/helpers": "^6.5.0",
+    "@types/d3-array": "^3.0.3",
+    "@types/d3-polygon": "^3.0.0",
     "@types/jest": "^29.1.2",
     "@types/mapbox-gl": "^2.7.6",
+    "@types/polylabel": "^1.0.5",
+    "@types/proj4": "^2.5.2",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.25.0",
@@ -39,6 +44,11 @@
   },
   "dependencies": {
     "@turf/boolean-contains": "^6.5.0",
-    "geojson": "^0.5.0"
+    "@turf/centroid": "^6.5.0",
+    "d3-array": "^2.12.1",
+    "d3-polygon": "^2.0.0",
+    "geojson": "^0.5.0",
+    "polylabel": "^1.1.0",
+    "proj4": "^2.8.0"
   }
 }
