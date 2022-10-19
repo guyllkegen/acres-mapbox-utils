@@ -25,40 +25,9 @@
     "branches": [
       "main",
       "next"
-    ],
-    "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "preset": "eslint",
-          "releaseRules": [
-            {
-              "type": "docs",
-              "scope": "README",
-              "release": "patch"
-            },
-            {
-              "type": "refactor",
-              "release": "patch"
-            },
-            {
-              "type": "style",
-              "release": "patch"
-            }
-          ],
-          "parserOpts": {
-            "noteKeywords": [
-              "BREAKING CHANGE",
-              "BREAKING CHANGES"
-            ]
-          }
-        }
-      ],
-      "@semantic-release/release-notes-generator"
     ]
   },
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "^9.0.2",
     "@turf/helpers": "^6.5.0",
     "@types/d3-array": "^3.0.3",
     "@types/d3-polygon": "^3.0.0",
