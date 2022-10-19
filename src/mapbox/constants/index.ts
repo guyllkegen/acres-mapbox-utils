@@ -1,0 +1,4 @@
+const TIME_LIMIT = 5000;
+const TIME_INCREMENT = 500;
+
+export { TIME_INCREMENT, TIME_LIMIT };
