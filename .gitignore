@@ -4,7 +4,6 @@ node_modules
 .npmignore
 .DS_Store
 
-__mock__
 geometry
 mapbox
 index.d.ts
