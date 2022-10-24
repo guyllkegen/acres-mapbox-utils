@@ -1,7 +1,7 @@
 import convertPolygon from '.';
 import {
   MultiPolygon, MultiPolygonArray, Polygon, PolygonArray,
-} from '../../__mock__/geometry/models';
+} from '../../__mock__/geometry/models/index.mock';
 
 describe('convertPolygon', () => {
   it('should return MultiPolygon from Polygon input', () => {

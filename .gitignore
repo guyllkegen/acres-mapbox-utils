@@ -3,3 +3,9 @@ node_modules
 /coverage
 .npmignore
 .DS_Store
+
+__mock__
+geometry
+mapbox
+index.d.ts
+index.js

@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --config ./jest.config.js",
-    "build": "tsc",
+    "build-prod": "tsc -p tsconfig.prod.json && node compressCode.js",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\" --ext .ts --fix",
     "semantic-release": "semantic-release",
-    "prepack": "npmignore --auto"
+    "prepack": "npmignore --auto",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -60,7 +61,8 @@
     "prettier": "^2.7.1",
     "semantic-release": "^19.0.5",
     "ts-jest": "^29.0.3",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "uglify-js": "^3.17.4"
   },
   "dependencies": {
     "@turf/bbox": "^6.5.0",
