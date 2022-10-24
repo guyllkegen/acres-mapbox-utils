@@ -1,5 +1,5 @@
 import getAcres, { getTotalAcres, getArea } from '.';
-import { testParcelFeature, testParcelFeatures } from '../../__mock__/mapbox/models';
+import { testParcelFeature, testParcelFeatures } from '../../__mock__/mapbox/models/index.mock';
 
 describe('getTotalAcres', () => {
   it('gets the aggregate sum of acres of the features', () => {
