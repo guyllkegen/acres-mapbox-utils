@@ -1,9 +1,11 @@
+# Rules from: /Users/guyllk/Projects/acres-mapbox-utils/.gitignore
 node_modules
+/dist
 /coverage
-/src
-/.github
-jest.config.js
-/__mock__
-/tsconfig.json
+.npmignore
 
-!/dist
+# npmignore - content above this line is automatically generated and modifications may be omitted
+# see npmjs.com/npmignore for more details.
+!dist/
+src/
+test/
