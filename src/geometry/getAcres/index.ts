@@ -14,10 +14,7 @@ export function getRingArea(coords: any[] | undefined) {
 
   const TM = getTM(coords[0]);
 
-  const projected = coords.map((p) =>
-    // sometimes KML have altitude
-    // eslint-disable-next-line implicit-arrow-linebreak
-    proj4('EPSG:4326', TM, [...p].splice(0, 2))) as [number, number][];
+  const projected = coords.map((p) => proj4('EPSG:4326', TM, [...p].splice(0, 2))) as [number, number][];
 
   return Math.abs(polygonArea(projected)) / AC_M2;
 }
