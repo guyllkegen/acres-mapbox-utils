@@ -20,7 +20,7 @@ const getAllFilesFromFolder = (dir) => {
   results.forEach((v) => {
     if (v.includes('__mock__')) return;
 
-    if (v.includes('.js')) {
+    if (v.includes('.js') && !v.includes('.test')) {
       allJs.push(v);
     }
   });
@@ -35,7 +35,7 @@ const compress = () => {
 
     const result = UglifyJS.minify(data);
 
-    filesystem.writeFileSync(filePath, result.code);
+    filesystem.writeFileSync(`${filePath.replace('.js', '.min')}.js`, result.code);
 
     console.log('done', filePath);
   });
