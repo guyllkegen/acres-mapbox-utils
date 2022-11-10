@@ -1,7 +1,7 @@
 import { sum } from 'd3-array';
 import { polygonArea } from 'd3-polygon';
 import { Feature, Geometry, Position } from 'geojson';
-import * as proj4 from 'proj4';
+import proj4 from 'proj4';
 
 const AC_M2 = 4046.86;
 
